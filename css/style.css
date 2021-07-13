@@ -1,0 +1,46 @@
+body{
+    background-color: #0F1417;
+}
+.alaFormsPrincipal{
+    background-color: #212529;
+    border-radius: 10px;
+    height: min-content;
+}
+.alaForms{
+    background-color: #212529; 
+}
+.titulo{
+    background-color: #212529;
+    color: white;
+}
+h2, h3, h4, h5, h6{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+th{
+    font-weight: bold;
+}
+label{
+    color: white;
+}
+.console{
+    margin-top: 10px;
+    background-color: black;
+    color: green;
+    width: 50%;
+}
+.console p{
+    margin-left: 5px;
+}
+.logo{
+    margin-left: 1px;   
+    width: 576px;
+}
+/* cores
+#FFFDD9
+#C9B29D
+#9C7B5F
+#E17745
+#BD896B
