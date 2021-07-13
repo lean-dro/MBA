@@ -5,8 +5,6 @@
  Ao tentar organizar suas tarefas por uma ferramenta, você já sentiu uma forte burocracia para incluir algo muito simples? Ou até oferecer muitas opções que acabam mais te atrapalhando do que ajudando? O MBA pode te ajudar nisso. Ainda em fase beta, ou seja, em desenvolvimento, o MBA oferece uma forma mais direta e simples para criar e gerenciar tarefas de seu dia-a-dia ou até escolares.
 
 
-# Imagens
-
 
 ### <br>
 ## O MBA foi escrito em:
