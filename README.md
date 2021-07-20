@@ -4,9 +4,15 @@
 
  Ao tentar organizar suas tarefas por uma ferramenta, você já sentiu uma forte burocracia para incluir algo muito simples? Ou até oferecer muitas opções que acabam mais te atrapalhando do que ajudando? O MBA pode te ajudar nisso. Ainda em fase beta, ou seja, em desenvolvimento, o MBA oferece uma forma mais direta e simples para criar e gerenciar tarefas de seu dia-a-dia ou até escolares.
 
+### <br>
 
+# Imagens
+![EXEMPLO INICIAL](assets/exemploMain.jpg)
+![EXEMPLO 1](assets/exemplo.jpg)
+![EXEMPLO 2](assets/exemplo2.jpg)
 
 ### <br>
+
 ## O MBA foi escrito em:
  ![SQL LOGO](https://img.icons8.com/ios/452/mysql-logo.png)
  ![PHP LOGO](https://img.icons8.com/ios/452/php-logo.png)

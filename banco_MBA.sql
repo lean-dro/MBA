@@ -32,7 +32,7 @@ CREATE TABLE `atividade` (
   `dataEntreg` date NOT NULL,
   `teams` enum('Teams','Avulsa') NOT NULL,
   `linkRef` text DEFAULT 'Nenhum',
-  `status` enum('Concluída','Pendente') NOT NULL,
+  `status` enum('Entregue','Pendente') DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `descricao` (`descricao`) USING HASH,
   UNIQUE KEY `descricao_2` (`descricao`) USING HASH,
@@ -49,4 +49,4 @@ CREATE TABLE `atividade` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-13 14:58:20
+-- Dump completed on 2021-07-20 15:11:43

@@ -61,7 +61,7 @@ $consulta = mysqli_query($conexao, $sql);
                         <label class="form-label  mt-3">Situação:</label>
                         <select class="form-select" name="slSit" id="slSit">
                             <option value="Pendente">Pendente</option>
-                            <option value="Concluída">Concluída</option>
+                            <option value="Entregue">Entregue</option>
                         </select>
                         <!--Botão de enviar-->
                         <input class="btn btn-primary mt-3 float-end mb-3" type="submit" value="Enviar">
@@ -80,7 +80,7 @@ $consulta = mysqli_query($conexao, $sql);
                             <th scope="col">Descrição</th>
                             <th scope="col">Atribuição</th>
                             <th scope="col">Entrega</th>
-                            <th scope="col">Forma de entrega</th>
+                            <th scope="col">Entrega</th>
                             <th scope="col">Link</th>
                             <th scope="col">Status</th>
                         </tr>
@@ -105,13 +105,21 @@ $consulta = mysqli_query($conexao, $sql);
                                     } else {
                                         echo "<a href='$link' target='_blank'>$link</a>";
                                     } ?></td>
-                                <?php
-                                $status = $dado['status'];
-                                if ($status == "Pendente") {
-                                    echo "<td class='text-danger'>$status";
-                                } else {
-                                    echo "<td class='text-success'>$status";
-                                } ?></td>
+                                    <?php
+                                    $status = $dado['status'];
+                                    $dataDif = date_diff(date_create(date('d-m-Y')), date_create($dado['dataEntreg']));
+                                    $dias = (int) $dataDif->format('%r%a');
+                                    if ($status == "Pendente") {
+                                        if ($dias < 0) {
+                                            echo "<td class='text-danger'>$status"." - Atrasada faz ".(-1*$dias)." dias";
+                                        }else {
+                                            echo "<td class='text-danger'>$status"." - Restam $dias dias";
+                                        }
+                                    } else {
+                                        echo "<td class='text-success'>$status";
+                                    } ?>
+                                </td>
+
                             </tr>
                         <?php }
                         ?>
